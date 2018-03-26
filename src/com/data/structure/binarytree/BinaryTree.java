@@ -1,8 +1,6 @@
 package com.data.structure.binarytree;
 
 
-import java.util.Vector;
-
 public class BinaryTree<K extends Comparable<K>, V> {
     /**
      * 根节点
@@ -33,32 +31,9 @@ public class BinaryTree<K extends Comparable<K>, V> {
         BNode current = rootNode;
         BNode parent;
         Boolean isLeft = null;
-        while (true) {
+        while (current.key.compareTo(key) != 0) {
             parent = current;
-            if (current.key.compareTo(key) == 0) {//替换
-                if (current.equals(rootNode)) {
-                    rootNode.element = bNode.element;
-                } else {
-                    bNode.leftChild = current.leftChild;
-                    if (current.leftChild != null) {
-                        current.leftChild.parent = bNode;
-                    }
-                    bNode.rightChild = current.rightChild;
-                    if (current.rightChild != null) {
-                        current.rightChild.parent = bNode;
-                    }
-                    bNode.parent = current.parent;
-
-                    if (isLeft == null) return;
-
-                    if (isLeft) {
-                        current.parent.leftChild = bNode;
-                    } else {
-                        current.parent.rightChild = bNode;
-                    }
-                }
-                return;
-            } else if (current.key.compareTo(key) > 0) {//插入到左子树中
+            if (current.key.compareTo(key) > 0) {//插入到左子树中
                 current = current.leftChild;
                 isLeft = true;
                 if (current == null) {
@@ -76,6 +51,28 @@ public class BinaryTree<K extends Comparable<K>, V> {
                 }
             }
         }
+
+        if (current.equals(rootNode)) {
+            rootNode.element = bNode.element;
+        } else {
+            bNode.leftChild = current.leftChild;
+            if (current.leftChild != null) {
+                current.leftChild.parent = bNode;
+            }
+            bNode.rightChild = current.rightChild;
+            if (current.rightChild != null) {
+                current.rightChild.parent = bNode;
+            }
+            bNode.parent = current.parent;
+
+            if (isLeft == null) return;
+
+            if (isLeft) {
+                current.parent.leftChild = bNode;
+            } else {
+                current.parent.rightChild = bNode;
+            }
+        }
     }
 
     /**
@@ -87,18 +84,73 @@ public class BinaryTree<K extends Comparable<K>, V> {
 
     public boolean delete(K key) {
         BNode current = rootNode;
-        boolean isLeftChild = true;
+        Boolean isLeftChild = null;
         if (current == null) return false;
         while (current.key.compareTo(key) != 0) {
-            if (current.key.compareTo(key) < 0) {
-
+            if (current.key.compareTo(key) > 0) {
+                isLeftChild = true;
+                current = current.leftChild;
             } else {
-
+                isLeftChild = false;
+                current = current.rightChild;
             }
+
+            if (current == null) {
+                return false;
+            }
+        }
+        /**
+         * 找到了待删除的节点，开始进行操作
+         */
+        //第一种情况
+        if (current.leftChild == null && current.rightChild == null) {
+            return deleteNoChild(current, isLeftChild);
+        } else if (current.leftChild != null && current.rightChild != null) {
+            return deleteTwoChild();
+        } else {//第三种情况，有两个节点
+            return deleteOneChild(current, isLeftChild);
+        }
+    }
+
+    private boolean deleteNoChild(BNode current, Boolean isLeftChild) {
+        if (current.equals(rootNode)) {
+            rootNode = null;
+            return true;
+        }
+        if (isLeftChild) {
+            current.parent.leftChild = null;
+        } else {
+            current.parent.rightChild = null;
         }
         return true;
     }
 
+    private boolean deleteTwoChild() {
+        return true;
+    }
+
+    private boolean deleteOneChild(BNode current, Boolean isLeftChild) {
+        if (current.equals(rootNode)) {
+            if (isLeftChild) {
+
+            }
+        }
+        if (isLeftChild) {
+            current.parent.leftChild = current.leftChild;
+        } else {
+            current.parent.rightChild = current.leftChild;
+        }
+        current.leftChild.parent = current.parent;
+
+        if (isLeftChild) {
+            current.parent.leftChild = current.rightChild;
+        } else {
+            current.parent.rightChild = current.rightChild;
+        }
+        current.rightChild.parent = current.parent;
+
+        return true;
+    }
 
     /**
      * 二叉树的先序遍历

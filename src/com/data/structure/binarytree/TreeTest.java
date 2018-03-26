@@ -13,21 +13,27 @@ public class TreeTest {
         binaryTree.insert(6, "房玄龄");
         binaryTree.insert(4, "侯君集");
 
-        binaryTree.insert(9, "毛主席");
+        binaryTree.insert(12, "罗成");
+
+       /* binaryTree.insert(9, "毛主席");
         binaryTree.insert(10, "彭德怀");
         binaryTree.insert(11, "林彪");
         binaryTree.insert(12, "刘伯承");
         binaryTree.insert(7, "徐向前");
         binaryTree.insert(6, "陈赓");
         binaryTree.insert(5, "粟裕");
-        binaryTree.insert(4, "叶剑英");
+        binaryTree.insert(4, "叶剑英");*/
+
+        System.out.println(binaryTree);
+
+        binaryTree.delete(4);
 
         System.out.println(binaryTree);
 
         /**
          *                李世民
          *          程咬金             尉迟恭
-         *     长孙无忌             秦叔宝   杜如晦
+         *     长孙无忌             秦叔宝   杜如晦/罗成
          * 侯君集     房玄龄
          */
     }
