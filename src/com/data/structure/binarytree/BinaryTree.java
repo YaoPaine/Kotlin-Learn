@@ -32,6 +32,7 @@ public class BinaryTree<K extends Comparable<K>, V> {
 
         BNode current = rootNode;
         BNode parent;
+        Boolean isLeft = null;
         while (true) {
             parent = current;
             if (current.key.compareTo(key) == 0) {//替换
@@ -39,12 +40,27 @@ public class BinaryTree<K extends Comparable<K>, V> {
                     rootNode.element = bNode.element;
                 } else {
                     bNode.leftChild = current.leftChild;
+                    if (current.leftChild != null) {
+                        current.leftChild.parent = bNode;
+                    }
                     bNode.rightChild = current.rightChild;
+                    if (current.rightChild != null) {
+                        current.rightChild.parent = bNode;
+                    }
                     bNode.parent = current.parent;
+
+                    if (isLeft == null) return;
+
+                    if (isLeft) {
+                        current.parent.leftChild = bNode;
+                    } else {
+                        current.parent.rightChild = bNode;
+                    }
                 }
                 return;
             } else if (current.key.compareTo(key) > 0) {//插入到左子树中
                 current = current.leftChild;
+                isLeft = true;
                 if (current == null) {
                     parent.leftChild = bNode;
                     bNode.parent = parent;
@@ -52,6 +68,7 @@ public class BinaryTree<K extends Comparable<K>, V> {
                 }
             } else {
                 current = current.rightChild;
+                isLeft = false;
                 if (current == null) {
                     parent.rightChild = bNode;
                     bNode.parent = parent;
@@ -60,6 +77,28 @@ public class BinaryTree<K extends Comparable<K>, V> {
             }
         }
     }
+
+    /**
+     * 二搜索树节点删除操作
+     * 1、该节点没有子节点
+     * 2、该节点右一个子节点
+     * 3、该节点有两个子节点
+     */
+
+    public boolean delete(K key) {
+        BNode current = rootNode;
+        boolean isLeftChild = true;
+        if (current == null) return false;
+        while (current.key.compareTo(key) != 0) {
+            if (current.key.compareTo(key) < 0) {
+
+            } else {
+
+            }
+        }
+        return true;
+    }
+
 
     /**
      * 二叉树的先序遍历
@@ -106,7 +145,7 @@ public class BinaryTree<K extends Comparable<K>, V> {
 
     @Override
     public String toString() {
-        return endOrder(rootNode);
+        return middleOrder(rootNode);
     }
 
     /**

@@ -12,6 +12,16 @@ public class TreeTest {
         binaryTree.insert(5, "长孙无忌");
         binaryTree.insert(6, "房玄龄");
         binaryTree.insert(4, "侯君集");
+
+        binaryTree.insert(9, "毛主席");
+        binaryTree.insert(10, "彭德怀");
+        binaryTree.insert(11, "林彪");
+        binaryTree.insert(12, "刘伯承");
+        binaryTree.insert(7, "徐向前");
+        binaryTree.insert(6, "陈赓");
+        binaryTree.insert(5, "粟裕");
+        binaryTree.insert(4, "叶剑英");
+
         System.out.println(binaryTree);
 
         /**
