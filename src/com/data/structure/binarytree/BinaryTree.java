@@ -1,6 +1,5 @@
 package com.data.structure.binarytree;
 
-
 public class BinaryTree<K extends Comparable<K>, V> {
     /**
      * 根节点
@@ -106,7 +105,7 @@ public class BinaryTree<K extends Comparable<K>, V> {
         if (current.leftChild == null && current.rightChild == null) {
             return deleteNoChild(current, isLeftChild);
         } else if (current.leftChild != null && current.rightChild != null) {
-            return deleteTwoChild();
+            return deleteTwoChild(current, isLeftChild);
         } else {//第三种情况，有两个节点
             return deleteOneChild(current, isLeftChild);
         }
@@ -125,30 +124,65 @@ public class BinaryTree<K extends Comparable<K>, V> {
         return true;
     }
 
-    private boolean deleteTwoChild() {
+    private boolean deleteTwoChild(BNode current, Boolean isLeftChild) {
+        //递归遍历找出删除节点，最左节点。
+        BNode targetNode = current.rightChild;
+        while (targetNode.leftChild != null) {
+            targetNode = targetNode.leftChild;
+        }
+
+        if (!targetNode.equals(current.rightChild)) {//表示被删除节点的右节点，还存在左子节点
+            targetNode.parent.leftChild = targetNode.rightChild;
+            if (targetNode.rightChild != null) {
+                targetNode.rightChild.parent = targetNode.parent;
+            }
+            targetNode.rightChild = current.rightChild;
+            current.rightChild.parent = targetNode;
+        }
+
+        if (current.equals(rootNode)) {
+            //targetNode.leftChild = rootNode.leftChild;
+            if (!targetNode.equals(current.rightChild)) {
+                targetNode.rightChild = rootNode.rightChild;
+            }
+            targetNode.parent = null;
+            rootNode = targetNode;
+        } else if (isLeftChild) {
+            current.parent.leftChild = targetNode;
+            targetNode.parent = current.parent;
+        } else {
+            current.parent.rightChild = targetNode;
+            targetNode.parent = current.parent;
+        }
+        targetNode.leftChild = current.leftChild;
+        current.leftChild.parent = targetNode;
         return true;
     }
 
     private boolean deleteOneChild(BNode current, Boolean isLeftChild) {
+        boolean isLeftNull = current.leftChild == null;
+
         if (current.equals(rootNode)) {
-            if (isLeftChild) {
-
+            if (isLeftNull) {
+                rootNode = current.rightChild;
+                current.rightChild.parent = null;
+            } else {
+                rootNode = current.leftChild;
+                current.leftChild.parent = null;
             }
+            return true;
         }
-        if (isLeftChild) {
-            current.parent.leftChild = current.leftChild;
-        } else {
-            current.parent.rightChild = current.leftChild;
-        }
-        current.leftChild.parent = current.parent;
 
         if (isLeftChild) {
-            current.parent.leftChild = current.rightChild;
+            current.parent.leftChild = isLeftNull ? current.rightChild : current.leftChild;
         } else {
-            current.parent.rightChild = current.rightChild;
+            current.parent.rightChild = isLeftNull ? current.rightChild : current.leftChild;
         }
-        current.rightChild.parent = current.parent;
-
+        if (isLeftNull) {
+            current.rightChild.parent = current.parent;
+        } else {
+            current.leftChild.parent = current.parent;
+        }
         return true;
     }
 
