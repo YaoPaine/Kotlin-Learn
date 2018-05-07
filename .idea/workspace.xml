@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cc236ca-0546-4a19-8943-65f2870d9211" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/data/structure/ClassLoaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/data/structure/NetworkClassLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/data/structure/binarytree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/data/structure/binarytree/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/data/structure/binarytree/TreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/data/structure/binarytree/TreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-kotlin/com/yao/chapter1/function/LambdaKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hello-kotlin/com/yao/chapter1/function/LambdaKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-kotlin/com/yao/chapter2/AppKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hello-kotlin/com/yao/chapter2/AppKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-kotlin/com/yao/chapter2/FunctionReturnKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hello-kotlin/com/yao/chapter2/FunctionReturnKt.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,30 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BinaryTree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/data/structure/binarytree/BinaryTree.java">
+      <file leaf-file-name="ClassLoaderTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/data/structure/ClassLoaderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="133" selection-start-line="133" selection-end-line="133" />
-              <folding>
-                <element signature="method#deleteNoChild#0;class#BinaryTree#0" />
-                <element signature="method#deleteOneChild#0;class#BinaryTree#0" />
-                <element signature="method#preOrder#0;class#BinaryTree#0" />
-                <element signature="method#middleOrder#0;class#BinaryTree#0" />
-                <element signature="method#endOrder#0;class#BinaryTree#0" />
-                <element signature="e#6616#6617#0" expanded="true" />
-                <element signature="e#6660#6661#0" expanded="true" />
-                <element signature="class#BNode#0;class#BinaryTree#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TreeTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/data/structure/binarytree/TreeTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+            <state relative-caret-position="191">
+              <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -84,7 +68,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/yao/chapter3/Person.kt" />
         <option value="$PROJECT_DIR$/src/com/yao/chapter3/Constructors.kt" />
         <option value="$PROJECT_DIR$/src/com/yao/chapter3/DontCreateMe.java" />
         <option value="$PROJECT_DIR$/src/com/yao/chapter3/DontCreateMe.kt" />
@@ -135,6 +118,7 @@
         <option value="$PROJECT_DIR$/src/com/data/structure/stack/LinkedStack.java" />
         <option value="$PROJECT_DIR$/src/com/data/structure/binarytree/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/com/data/structure/binarytree/TreeTest.java" />
+        <option value="$PROJECT_DIR$/src/com/data/structure/ClassLoaderTest.java" />
       </list>
     </option>
   </component>
@@ -143,6 +127,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="24" />
@@ -155,6 +142,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,31 +175,31 @@
               <item name="hello-kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="structure" type="462c0819:PsiDirectoryNode" />
-              <item name="binarytree" type="462c0819:PsiDirectoryNode" />
+              <item name="yao" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Groovy compiler" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="android.sdk.path" value="/opt/Sdk" />
+    <property name="SearchEverywhereHistoryKey" value="string&#9;PSI&#9;JAVA://java.lang.String&#10;String&#9;null&#9;null&#10;ArrayDe&#9;PSI&#9;JAVA://java.util.ArrayDeque&#10;linkedList&#9;PSI&#9;JAVA://java.util.LinkedList&#10;ArrayLis&#9;PSI&#9;JAVA://java.util.ArrayList&#10;closeable&#9;PSI&#9;JAVA://java.io.Closeable&#10;Cloneable&#9;PSI&#9;JAVA://java.lang.Cloneable&#10;HashM&#9;PSI&#9;JAVA://java.util.HashMap&#10;ArrayList&#9;FILE&#9;jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/ArrayList.java&#10;Collections&#9;PSI&#9;JAVA://java.util.Collections" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="/opt/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kotlin-koans" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kotlin-koans" />
-    <property name="SearchEverywhereHistoryKey" value="string&#9;PSI&#9;JAVA://java.lang.String&#10;String&#9;null&#9;null&#10;ArrayDe&#9;PSI&#9;JAVA://java.util.ArrayDeque&#10;linkedList&#9;PSI&#9;JAVA://java.util.LinkedList&#10;ArrayLis&#9;PSI&#9;JAVA://java.util.ArrayList&#10;closeable&#9;PSI&#9;JAVA://java.io.Closeable&#10;Cloneable&#9;PSI&#9;JAVA://java.lang.Cloneable&#10;HashM&#9;PSI&#9;JAVA://java.util.HashMap&#10;ArrayList&#9;FILE&#9;jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/ArrayList.java&#10;Collections&#9;PSI&#9;JAVA://java.util.Collections" />
+    <property name="settings.editor.selected.configurable" value="Groovy compiler" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/data/structure" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/com/yao/chapter1/hello" />
     </key>
@@ -226,11 +216,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TreeTest">
+  <component name="RunManager" selected="Application.ClassLoaderTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="0" />
+    </configuration>
+    <configuration name="ClassLoaderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.data.structure.ClassLoaderTest" />
+      <module name="hello-kotlin" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.data.structure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration name="LinkedStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.data.structure.stack.LinkedStack" />
@@ -283,16 +284,6 @@
       <option name="MAIN_CLASS_NAME" value="com.yao.chapter7.CollectionsKt" />
       <option name="WORKING_DIRECTORY" />
     </configuration>
-    <configuration name="com.yao.chapter7.FunctionsKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="hello-kotlin" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.yao.chapter7.FunctionsKt" />
-      <option name="WORKING_DIRECTORY" />
-    </configuration>
     <configuration name="com.yao.chapter7.NullCheckKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="hello-kotlin" />
       <option name="VM_PARAMETERS" />
@@ -339,19 +330,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list>
-      <item itemvalue="Kotlin.com.yao.chapter7.FunctionsKt" />
       <item itemvalue="Kotlin.com.yao.chapter7.CollectionsKt" />
       <item itemvalue="Kotlin.com.yao.chapter7.NullCheckKt" />
       <item itemvalue="Application.LinkedStack" />
       <item itemvalue="Application.TreeTest" />
+      <item itemvalue="Application.ClassLoaderTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClassLoaderTest" />
         <item itemvalue="Application.TreeTest" />
         <item itemvalue="Application.LinkedStack" />
         <item itemvalue="Kotlin.com.yao.chapter7.NullCheckKt" />
         <item itemvalue="Kotlin.com.yao.chapter7.CollectionsKt" />
-        <item itemvalue="Kotlin.com.yao.chapter7.FunctionsKt" />
       </list>
     </recent_temporary>
   </component>
@@ -396,7 +387,10 @@
       <workItem from="1522054091367" duration="15183000" />
       <workItem from="1522294565524" duration="859000" />
       <workItem from="1522297894601" duration="992000" />
-      <workItem from="1522377938045" duration="11239000" />
+      <workItem from="1522377938045" duration="11810000" />
+      <workItem from="1523090119087" duration="1507000" />
+      <workItem from="1523097555405" duration="46000" />
+      <workItem from="1525659011903" duration="3363000" />
     </task>
     <task id="LOCAL-00001" summary="二叉搜索树的插入操作和三种遍历方法">
       <created>1522063794474</created>
@@ -419,11 +413,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522069328349</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="搜索二叉树节点删除完成">
+      <created>1522394835640</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1522394835640</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147723000" />
+    <option name="totallyTimeSpent" value="153210000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -435,48 +436,49 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32761312" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="right" id="Flutter Outline" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.648986" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917318" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32761312" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3281493" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32970452" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39157566" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39157566" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32917318" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2530303" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26439393" />
+      <window_info anchor="right" id="SciView" order="9" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.77067083" />
       <window_info anchor="right" id="Flutter Inspector" order="10" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="SciView" order="9" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.29393467" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Flutter Inspector" order="10" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3281493" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3037879" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -487,16 +489,16 @@
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.30171072" />
+      <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32970452" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3281493" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30171072" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3281493" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.3281493" />
+      <window_info anchor="right" id="SciView" order="9" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
     </layout-to-restore>
@@ -511,19 +513,12 @@
     <MESSAGE value="二叉搜索树的插入操作和三种遍历方法" />
     <MESSAGE value="二叉搜索树的插入操作bug修改" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="搜索二叉树节点删除完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="搜索二叉树节点删除完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/data/structure/binarytree/BinaryTree.java</url>
-          <line>133</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="20" />
+      <option name="time" value="21" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -531,20 +526,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/yao/chapter3/Customer.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yao/chapter3/DontCreateMe.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yao/chapter3/InitOrderDemo.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -862,27 +843,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/data/structure/binarytree/TreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/data/structure/binarytree/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        <state relative-caret-position="69">
+          <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
           <folding>
             <element signature="method#deleteNoChild#0;class#BinaryTree#0" />
             <element signature="method#deleteOneChild#0;class#BinaryTree#0" />
             <element signature="method#preOrder#0;class#BinaryTree#0" />
             <element signature="method#middleOrder#0;class#BinaryTree#0" />
             <element signature="method#endOrder#0;class#BinaryTree#0" />
-            <element signature="e#6616#6617#0" expanded="true" />
-            <element signature="e#6660#6661#0" expanded="true" />
             <element signature="class#BNode#0;class#BinaryTree#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/data/structure/binarytree/TreeTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/data/structure/NetworkClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        <state relative-caret-position="-716">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/data/structure/ClassLoaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
         </state>
       </provider>
     </entry>
