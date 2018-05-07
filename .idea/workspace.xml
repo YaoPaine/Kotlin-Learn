@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cc236ca-0546-4a19-8943-65f2870d9211" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/data/structure/ClassLoaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/data/structure/NetworkClassLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-kotlin/com/yao/chapter1/function/LambdaKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hello-kotlin/com/yao/chapter1/function/LambdaKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-kotlin/com/yao/chapter2/AppKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hello-kotlin/com/yao/chapter2/AppKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-kotlin/com/yao/chapter2/FunctionReturnKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hello-kotlin/com/yao/chapter2/FunctionReturnKt.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,10 +16,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="ClassLoaderTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/data/structure/ClassLoaderTest.java">
+        <entry file="file://$PROJECT_DIR$/src/com/classloder/ClassLoaderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+            <state>
+              <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,9 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/yao/chapter3/Constructors.kt" />
-        <option value="$PROJECT_DIR$/src/com/yao/chapter3/DontCreateMe.java" />
-        <option value="$PROJECT_DIR$/src/com/yao/chapter3/DontCreateMe.kt" />
         <option value="$PROJECT_DIR$/src/com/yao/chapter3/Customer.kt" />
         <option value="$PROJECT_DIR$/src/com/yao/Inject.java" />
         <option value="$PROJECT_DIR$/src/com/yao/chapter3/App.kt" />
@@ -119,6 +115,9 @@
         <option value="$PROJECT_DIR$/src/com/data/structure/binarytree/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/com/data/structure/binarytree/TreeTest.java" />
         <option value="$PROJECT_DIR$/src/com/data/structure/ClassLoaderTest.java" />
+        <option value="$PROJECT_DIR$/src/com/classloder/JarEncrypt.java" />
+        <option value="$PROJECT_DIR$/src/com/classloder/JarDecodeClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/com/classloder/ClassLoaderTest.java" />
       </list>
     </option>
   </component>
@@ -143,8 +142,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,19 +165,14 @@
               <item name="hello-kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="structure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hello-Kotlin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hello-kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="yao" type="462c0819:PsiDirectoryNode" />
+              <item name="classloder" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -223,12 +215,12 @@
       <option name="WIDTH" value="0" />
     </configuration>
     <configuration name="ClassLoaderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.data.structure.ClassLoaderTest" />
+      <option name="MAIN_CLASS_NAME" value="com.classloder.ClassLoaderTest" />
       <module name="hello-kotlin" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.data.structure.*" />
+          <option name="PATTERN" value="com.classloder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -390,7 +382,8 @@
       <workItem from="1522377938045" duration="11810000" />
       <workItem from="1523090119087" duration="1507000" />
       <workItem from="1523097555405" duration="46000" />
-      <workItem from="1525659011903" duration="3363000" />
+      <workItem from="1525659011903" duration="3525000" />
+      <workItem from="1525665847279" duration="3627000" />
     </task>
     <task id="LOCAL-00001" summary="二叉搜索树的插入操作和三种遍历方法">
       <created>1522063794474</created>
@@ -420,11 +413,25 @@
       <option name="project" value="LOCAL" />
       <updated>1522394835640</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="自定义classloader">
+      <created>1525664435169</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1525664435169</updated>
+    </task>
+    <task id="LOCAL-00006" summary="自定义classloader,对生成的jar进行加解密">
+      <created>1525674484611</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1525674484611</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153210000" />
+    <option name="totallyTimeSpent" value="156999000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -443,7 +450,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32761312" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="right" id="Flutter Outline" />
+      <window_info anchor="right" id="Flutter Outline" order="5" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
       <window_info anchor="right" id="Database" order="5" />
@@ -456,20 +463,20 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32970452" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39157566" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32917318" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39157566" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32917318" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26439393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2689394" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="SciView" order="9" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="right" id="Flutter Inspector" order="10" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
@@ -478,15 +485,15 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.29393467" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Flutter Inspector" order="10" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.3281493" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3037879" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32970452" />
+      <window_info anchor="right" id="SciView" order="9" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Designer" order="3" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Database" order="5" />
@@ -494,11 +501,11 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32970452" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.30171072" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32970452" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3281493" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="SciView" order="9" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3281493" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
     </layout-to-restore>
@@ -514,7 +521,9 @@
     <MESSAGE value="二叉搜索树的插入操作bug修改" />
     <MESSAGE value="commit" />
     <MESSAGE value="搜索二叉树节点删除完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="搜索二叉树节点删除完成" />
+    <MESSAGE value="自定义classloader" />
+    <MESSAGE value="自定义classloader,对生成的jar进行加解密" />
+    <option name="LAST_COMMIT_MESSAGE" value="自定义classloader,对生成的jar进行加解密" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -526,48 +535,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/yao/chapter3/InitOrderDemo.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yao/chapter3/Invoice.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yao/chapter3/Person.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yao/chapter3/PropertyDemo.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yao/chapter3/extension/A.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yao/chapter3/extension/C.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yao/chapter3/extension/B.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -865,21 +832,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/data/structure/NetworkClassLoader.java">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/jar/JarInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-716">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        <state relative-caret-position="-16">
+          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/zip/ZipEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/jar/JarEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/classloder/JarEncrypt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="82" column="20" lean-forward="true" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
           <folding>
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/data/structure/ClassLoaderTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/classloder/NetworkClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+        <state relative-caret-position="20">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="528" column="23" selection-start-line="528" selection-start-column="23" selection-end-line="528" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/classloder/JarDecodeClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/classloder/ClassLoaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
